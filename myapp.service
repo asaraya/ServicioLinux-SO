@@ -1,0 +1,14 @@
+[Unit]
+Description=Mi Hello World con NodeJS y Express
+After=network.target
+
+[Service]
+User=andressalasaraya
+WorkingDirectory=/home/andressalasaraya/Documentos/myapp
+ExecStart=/usr/bin/node app.js
+Restart=always
+RestartSec=10
+Environment=NODE_ENV=production PORT=3000
+
+[Install]
+WantedBy=multi-user.target
