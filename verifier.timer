@@ -1,0 +1,10 @@
+[Unit]
+Description=Temporizador para verificar cambios en rama Deployment
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=5min
+Unit=verifier.service
+
+[Install]
+WantedBy=timers.target

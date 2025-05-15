@@ -1,0 +1,6 @@
+[Unit]
+Description=Servicio para verificar cambios en rama Deployment
+
+[Service]
+Type=oneshot
+ExecStart=/home/andressalasaraya/Escritorio/ServicioLinux-SO/updater.sh
